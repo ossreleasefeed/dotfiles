@@ -53,4 +53,3 @@ thirdparty/
 ########
 Vagrantfile
 *.editorconfig
-.pyc
