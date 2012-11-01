@@ -1,0 +1,5 @@
+{
+    "sublimelinter": true,
+    "sublimelinter_popup_errors_on_save": true,
+    "sublimelinter_gutter_marks": true
+}
