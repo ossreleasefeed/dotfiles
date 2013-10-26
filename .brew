@@ -1,0 +1,61 @@
+#!/usr/bin/env bash
+
+# Make sure we're using the latest Homebrew
+brew update
+
+# Upgrade any already-installed formulae
+brew upgrade
+
+# grep for programmers
+brew install ack
+
+brew install git
+brew install node
+brew install tree
+
+# Install native apps
+brew tap phinze/homebrew-cask
+brew install brew-cask
+
+function installcask() {
+        brew cask install "${@}" 2> /dev/null
+}
+
+installcask dropbox
+installcask google-chrome
+installcask google-chrome-canary
+installcask google-drive
+# http://imageoptim.com/
+installcask imageoptim
+installcask iterm2
+installcask sublime-text
+installcask virtualbox
+installcask vlc
+# Completely uninstall apps from Mac
+# http://www.freemacsoft.net/appcleaner/
+installcask app-cleaner
+# Make it clean
+installcask ccleaner
+# Totally awesome live cheat sheets for your apps
+# http://www.mediaatelier.com/CheatSheet/
+installcask cheat-sheet
+# Share files fast http://getcloudapp.com/
+installcask cloudapp
+# FTP FTW
+installcask filezilla
+# Hosts file manager
+# https://code.google.com/p/gmask/
+installcask gas-mask
+# IRC
+installcask lime-chat
+# Opera browsers
+installcask opera-next
+installcask opera
+# Postgresql app
+installcask postgres
+installcask skype
+installcask thunderbird
+# Make VMs less painfull
+installcask vagrant
+# Got VPN?
+installcask viscosity
